@@ -6,6 +6,7 @@
 <style>
     body {
         height: 100vh;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,33 +14,6 @@
         font-family: Arial, sans-serif;
     }
 
-    form {
+    .search-box {
         width: 100%;
-        max-width: 580px;
-    }
 
-    input[type="text"] {
-        width: 100%;
-        padding: 14px 20px;
-        font-size: 16px;
-        border-radius: 50px;
-        border: 1px solid #dfe1e5;
-        outline: none;
-        box-shadow: 0 1px 6px rgba(32,33,36,.28);
-        transition: box-shadow 0.2s ease;
-    }
-
-    input[type="text"]:focus {
-        box-shadow: 0 1px 8px rgba(32,33,36,.35);
-        border-color: transparent;
-    }
-</style>
-</head>
-<body>
-
-<form action="https://formspree.io/f/xykzqvon" method="POST">
-    <input type="text" name="search" autocomplete="off">
-</form>
-
-</body>
-</html>
