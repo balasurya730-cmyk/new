@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Input Search Box</title>
-<style>
-    body {
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #ffffff;
-        font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>Input Search Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    .search-box {
-        width: 100%;
-        max-width: 584px;
-        text-align: center;
-    }
+    <form class="search-box" 
+          action="https://formspree.io/f/xykzqvon" 
+          method="POST">
 
-    .search-input {
-        width: 100%;
-        padding: 14px 20px;
-        font-size: 16px;
-        border-radius: 24px;
-        border: 1px solid #dfe1e5;
-        outline: none;
-        box-shadow: 0 1px 6px rgba(32,33,36,.28);
-    }
+        <input 
+            type="text" 
+            name="search"
+            class="search-input"
+            placeholder=""
+            required
+        >
 
-    .search-input:focus {
-        box-shadow: 0 1px 8px rgba(32,33,36,.35);
-        border-color: transparent;
-    }
+        <button type="submit" class="search-btn">Search</button>
+    </form>
 
-    .sear
+</body>
+</html>
 
